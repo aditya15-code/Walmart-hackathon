@@ -1,0 +1,39 @@
+Part A: Single Vehicle Route Optimization
+Problem Statement: Given a depot/hub and customer orders, find the best delivery route for a single vehicle that minimizes total distance traveled while delivering all orders.
+
+Approach:
+
+Graph Representation: Represent the problem as a graph, where nodes are depot/hub and customer locations, and edges represent distances between them.
+Route Generation: Generate all possible routes that visit each customer exactly once and return to the depot.
+Route Evaluation: Calculate the total distance traveled for each route.
+Optimization: Select the route with the minimum total distance traveled.
+Output Formatting: Output the selected route and total distance traveled.
+Algorithm:
+
+One approach could be to use a brute-force algorithm to generate and evaluate all possible routes. Since the problem size might become large, you might need to implement optimizations or heuristics to reduce computational complexity.
+Complexity:
+
+Time Complexity: Depending on the approach, it could range from O(n!) to O(n^2), where n is the number of customer locations.
+Space Complexity: O(n^2) to store the graph and route information.
+Part B: Multiple Vehicle Route Optimization
+Problem Statement: Given a depot/hub, customer orders, and a limit on each vehicle's capacity, find the best delivery routes for multiple vehicles that minimize total distance traveled while delivering all orders.
+
+Approach:
+
+Graph Representation: Same as Part A.
+Vehicle Assignment: Assign orders to vehicles based on their capacity.
+Route Generation: Generate routes for each vehicle, ensuring that the capacity is not exceeded.
+Route Evaluation: Calculate the total distance traveled for each vehicle's route.
+Optimization: Optimize routes for each vehicle independently.
+Output Formatting: Output the selected routes for each vehicle and total distance traveled across all vehicles.
+Algorithm:
+
+You might need to implement a variation of the Traveling Salesman Problem (TSP) considering vehicle capacity constraints. Techniques like genetic algorithms or dynamic programming could be explored.
+Complexity:
+
+Time Complexity: Similar to Part A, but with additional considerations for vehicle capacity and assignment, resulting in potentially higher complexity.
+Space Complexity: Similar to Part A, but with additional space for storing vehicle and order assignments.
+Evaluation Criteria
+Both parts are evaluated based on metrics such as total distance traveled, runtime complexity, space complexity, and actual execution time.
+
+For implementation, you'll need to create a structured Git repository with separate directories for each part, input/output datasets, and appropriate documentation. Ensure that your code adheres to the provided specifications and performs within the required constraints.
